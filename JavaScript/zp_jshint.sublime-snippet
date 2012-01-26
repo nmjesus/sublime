@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+/*jshint browser:true, eqeqeq:true, undef:true, curly:true, laxbreak:true, forin:true, smarttabs:true */
+/*global SAPO:true, s\$:true */
+
+${0:}]]></content>
+    <tabTrigger>jshint</tabTrigger>
+    <scope>source.js</scope>
+    <description>jshint snippet</description>
+</snippet>

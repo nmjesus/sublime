@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+for (var ${3:i} = 0, ${4:f} = ${1:col}.length, ${2:el}; ${3:i} < ${4:f}; ++${3:i}) {
+	${2:el} = ${1:col}[${3:i}];
+	${0:// body...}
+}]]></content>
+    <tabTrigger>for</tabTrigger>
+    <scope>source.js</scope>
+    <description>for snippet</description>
+</snippet>

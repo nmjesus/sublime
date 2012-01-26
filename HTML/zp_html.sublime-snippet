@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		
+		<title>${1:sample}</title>
+		
+		<link type="text/javascript" rel="stylesheet" href="${2:/Assets/Images/Component}"/>
+		
+		<script type="text/javascript" src="${3:/SAPO/0.1}"></script>
+		
+		<style type="text/css">
+			body {
+				font-family:	Helvetica, FreeSans, Arial, sans-serif;
+			}
+		</style>
+	</head>
+	
+	<body>
+		$0
+		
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+</html>]]></content>
+	<tabTrigger>html</tabTrigger>
+	<scope>text.html</scope>
+	<description>html snippet</description>
+</snippet>

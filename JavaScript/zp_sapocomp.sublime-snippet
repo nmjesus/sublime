@@ -1,0 +1,63 @@
+<snippet>
+    <content><![CDATA[
+if (!SAPO.Component || typeof SAPO.Component === 'undefined') {
+	SAPO.namespace('Component');
+}
+
+(function() {
+
+	var	Css			= SAPO.Dom.Css,
+		Elem		= SAPO.Dom.Element,
+		Event		= SAPO.Dom.Event,
+	
+	/**
+	 * @class SAPO.Component.${1:CompName}
+	 * 
+	 * ${2:desc}
+	 * 
+	 * @version 0.1
+	 * @since {3:January 2012}
+	 * @author jose.p.dias AT co.sapo.pt
+	 */
+
+	/**
+	 * @constructor SAPO.Component.${1:CompName}
+	 * 
+	 * @param {String|DOMElement}		ctn			- block element which will be populated with the timeline
+	 * 
+	 * @param {Object}					opts
+	 * @... {optional String}			x			- x
+	 */
+	var ${1:CompName} = function(ctn, opts) {
+		this._init(ctn, opts);
+	};
+
+	${1:CompName}.prototype = {
+		version:	'0.1',
+
+		_init: function(ctn, opts) {
+			// container
+			this.container = s\$(ctn);
+
+			// event handlers
+			this.handlers = {};
+			this.handlers.start = this._onStart.bindObjEvent(this);
+
+			// options
+			this.options = SAPO.extendObj({
+				a:	'b'
+			}}, opts || {});
+		},
+		
+		_onStart: function(event) {
+		}
+	};
+
+	SAPO.Component.${1:CompName} = ${1:CompName};
+	
+})();	
+]]></content>
+    <tabTrigger>sapocomp</tabTrigger>
+    <scope>source.js</scope>
+    <description>sapo component snippet</description>
+</snippet>

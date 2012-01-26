@@ -1,0 +1,21 @@
+{
+	"scope": "text.html - source - meta.tag, punctuation.definition.tag.begin",
+	"completions":
+	[
+		{"trigger": "a",		"contents": "<a href=\"$1\">$2</a>" },
+		{"trigger": "div",		"contents": "<div>$1</div>" },
+		{"trigger": "h1",		"contents": "<h1>$1</h1>" },
+		{"trigger": "h2",		"contents": "<h2>$1</h2>" },
+		{"trigger": "h3",		"contents": "<h3>$1</h3>" },
+		{"trigger": "iframe",	"contents": "<iframe src=\"$1\"></iframe>" },
+		{"trigger": "img",		"contents": "<img src=\"$1\">" },
+		{"trigger": "input",	"contents": "<input type=\"${1:text}\" value=\"$0\"/>" },
+		{"trigger": "link",		"contents": "<link rel=\"stylesheet\" type=\"text/css\" href=\"$1\">" },
+		{"trigger": "ol",		"contents": "<ol><li>$1</li></ol>" },
+		{"trigger": "script",	"contents": "<script type=\"text/javascript\">$0</script>" },
+		{"trigger": "script2",	"contents": "<script type=\"text/javascript\" src="$0"></script>" },
+		{"trigger": "style",	"contents": "<style type=\"text/css\">$1</style>" },
+		{"trigger": "table",	"contents": "<table><tr><td>$1</td></tr></table>" },
+		{"trigger": "ul",		"contents": "<ul><li>$1</li></ul>" }
+	]
+}

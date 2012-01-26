@@ -1,0 +1,5 @@
+{
+  "selector":   "source.js",
+  "cmd":        ["$packages/JSHint/jshint", "$file"],
+  "file_regex": "^(...*?): line ([0-9]*), col ([0-9]*), (.*)$"
+}

@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+for (var ${1:k} in ${2:col}) {
+	if (!${2:col}.hasOwnProperty(${1:k})) {	continue;	}
+	${0:// body...}
+}]]></content>
+    <tabTrigger>forin</tabTrigger>
+    <scope>source.js</scope>
+    <description>for ... in snippet</description>
+</snippet>
